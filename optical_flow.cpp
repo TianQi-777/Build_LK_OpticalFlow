@@ -240,14 +240,13 @@ void OpticalFlowMultiLevel(
     vector<Mat> pyr1, pyr2; // 图像金字塔
     for (int i = 0; i < pyramids; i++) {
         Mat temp_1, temp_2;
-        resize(img1, temp_1, Size(), scales[i], scales[i]);  //貌似pyrDown()不能乘以过小的系数
+        resize(img1, temp_1, Size(), scales[i], scales[i]);  //pyrDown()不能乘以过小的系数
         resize(img2, temp_2, Size(), scales[i], scales[i]);
         pyr1.push_back(temp_1);
         pyr2.push_back(temp_2);
     }
 
     // coarse-to-fine LK 光流金字塔
-    // TODO START YOUR CODE HERE
     for (int level = pyramids - 1; level >=0; level--) {
         vector<KeyPoint> kp1_pyr; // 设置金字塔层数
         KeyPoint temp;
