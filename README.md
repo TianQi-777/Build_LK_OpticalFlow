@@ -30,5 +30,10 @@ make -j2
 ## Result
 <div align=center>  
   
-![](https://github.com/TianQi-777/Build_ORB_FeatureDescriptor/blob/master/Images/input)
+![](https://github.com/TianQi-777/Build_LK_OpticalFlow/blob/master/Images/opencv.png)
+</div>
+
+<div align=center>  
+  
+![](https://github.com/TianQi-777/Build_LK_OpticalFlow/blob/master/Images/LK.png)
 </div>
